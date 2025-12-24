@@ -16,7 +16,8 @@ from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
 
 from src.exception import CustomException
-from src.logger import logging
+from src.logging import logging
+from dataclasses import dataclass
 
 from src.utils import save_object,evaluate_models
 
