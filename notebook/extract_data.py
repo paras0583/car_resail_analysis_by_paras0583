@@ -3,7 +3,7 @@ import pandas as pd
 
 # Step 1: Extract the zip
 with zipfile.ZipFile("car-dataset.zip", "r") as z:
-    z.extractall("car_data")  # folder ka naam tu kuch bhi rakh sakta hai
+    z.extractall("car_data")  # folder ka naam ham kuch bhi rakh sakta hai
 
 # Step 2: Load CSV
 df = pd.read_csv("car_data/Car Sell Dataset.csv")
