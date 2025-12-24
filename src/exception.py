@@ -1,18 +1,26 @@
 import sys
-from src.logger import logging
+from src.logging import logging  # your custom logger
 
-def error_message_detail(error,error_detail:sys):
-    _,_,exc_tb = error_detail.exc_info()
-    file_name = exc_tb.tb_frame.tb_code.tb_filename
-    error_message = "Error occured in script name [{0}] line number [(1)] error message [(2)]".format(file_name,exc_tb.lineno,str(error))
-
+def error_message_detail(error, error_detail):
+    """
+    Returns a detailed error message with file name, line number and actual error
+    """
+    _, _, exc_tb = error_detail.exc_info()
+    file_name = exc_tb.tb_frame.f_code.co_filename
+    line_number = exc_tb.tb_lineno
+    error_message = f"Error occurred in script [{file_name}] line number [{line_number}] error message [{str(error)}]"
     return error_message
 
 class CustomException(Exception):
-    def __init__(self,error_message,error:sys):
-        
-        self.error_message=error_message_detail(error_message,error_detail=error_detail)
-        super().__init__(error_message)
+    def __init__(self, error, error_detail):
+        """
+        Custom exception for the project
+
+        :param error: actual error object
+        :param error_detail: sys module to get traceback
+        """
+        self.error_message = error_message_detail(error, error_detail=error_detail)
+        super().__init__(self.error_message)
 
     def __str__(self):
         return self.error_message

@@ -1,0 +1,9 @@
+[2025-12-24 08:27:43,911] INFO - data_ingestion.py : Entered the data ingestion module or componenets
+[2025-12-24 08:27:43,973] INFO - data_ingestion.py : Read the dataset as dataframe
+[2025-12-24 08:27:44,051] INFO - data_ingestion.py : train test split has been initiated
+[2025-12-24 08:27:44,103] INFO - data_ingestion.py : Ingestion of the data has been completed
+[2025-12-24 08:27:44,166] INFO - data_transformation.py : Read train and test data completed
+[2025-12-24 08:27:44,166] INFO - data_transformation.py : Obtaining preprocessing object
+[2025-12-24 08:27:44,166] INFO - data_transformation.py : Categorical columns: ['city', 'make', 'model', 'variant', 'fuel_type', 'color', 'body_type', 'transmission', 'latest_publish_date']
+[2025-12-24 08:27:44,168] INFO - data_transformation.py : Numerical columns: ['mileage', 'make_year', 'price', 'no_of_owners', 'registration_year']
+[2025-12-24 08:27:44,173] INFO - data_transformation.py : Applying preprocessing object on training and testing dataframes

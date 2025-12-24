@@ -1,0 +1,4 @@
+[2025-12-20 02:14:25,320] INFO - data_ingestion.py : Entered the data ingestion module or componenets
+[2025-12-20 02:14:25,419] INFO - data_ingestion.py : Read the dataset as dataframe
+[2025-12-20 02:14:25,521] INFO - data_ingestion.py : train test split has been initiated
+[2025-12-20 02:14:25,632] INFO - data_ingestion.py : Ingestion of the data has been completed
