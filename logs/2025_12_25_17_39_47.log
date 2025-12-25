@@ -1,0 +1,17 @@
+[2025-12-25 17:39:52,737] INFO - data_ingestion.py : Entered the data ingestion module or componenets
+[2025-12-25 17:39:52,781] INFO - data_ingestion.py : Read the dataset as dataframe
+[2025-12-25 17:39:52,856] INFO - data_ingestion.py : train test split has been initiated
+[2025-12-25 17:39:52,898] INFO - data_ingestion.py : Ingestion of the data has been completed
+[2025-12-25 17:39:52,974] INFO - data_transformation.py : Read train and test data completed
+[2025-12-25 17:39:52,975] INFO - data_transformation.py : Obtaining preprocessing object
+[2025-12-25 17:39:52,975] INFO - data_transformation.py : Categorical columns: ['city', 'make', 'model', 'variant', 'fuel_type', 'color', 'body_type', 'transmission', 'latest_publish_date']
+[2025-12-25 17:39:52,977] INFO - data_transformation.py : Numerical columns: ['mileage', 'make_year', 'no_of_owners', 'registration_year']
+[2025-12-25 17:39:52,981] INFO - data_transformation.py : Applying preprocessing object on training and testing dataframes
+[2025-12-25 17:39:54,840] INFO - data_transformation.py : Training array shape: (6509, 6298)
+[2025-12-25 17:39:54,840] INFO - data_transformation.py : Testing array shape: (1628, 6298)
+[2025-12-25 17:39:54,845] INFO - data_transformation.py : Saved preprocessing object at artifacts\preprocessor.pkl
+[2025-12-25 17:39:54,893] INFO - model_trainer.py : Starting model trainer
+[2025-12-25 17:39:54,894] INFO - model_trainer.py : Reduced training samples to 3000
+[2025-12-25 17:39:54,894] INFO - model_trainer.py : Reduced test samples
+[2025-12-25 17:39:54,894] INFO - model_trainer.py : x_train shape: (3000, 6297), x_test shape: (750, 6297)
+[2025-12-25 17:40:11,047] INFO - model_trainer.py : Best model found: Linear Regression with score 0.8963536252753327

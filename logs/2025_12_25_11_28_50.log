@@ -1,0 +1,13 @@
+[2025-12-25 11:29:15,814] INFO - data_ingestion.py : Entered the data ingestion module or componenets
+[2025-12-25 11:29:15,920] INFO - data_ingestion.py : Read the dataset as dataframe
+[2025-12-25 11:29:15,990] INFO - data_ingestion.py : train test split has been initiated
+[2025-12-25 11:29:16,046] INFO - data_ingestion.py : Ingestion of the data has been completed
+[2025-12-25 11:29:16,116] INFO - data_transformation.py : Read train and test data completed
+[2025-12-25 11:29:16,116] INFO - data_transformation.py : Obtaining preprocessing object
+[2025-12-25 11:29:16,116] INFO - data_transformation.py : Categorical columns: ['city', 'make', 'model', 'variant', 'fuel_type', 'color', 'body_type', 'transmission', 'latest_publish_date']
+[2025-12-25 11:29:16,117] INFO - data_transformation.py : Numerical columns: ['mileage', 'make_year', 'no_of_owners', 'registration_year']
+[2025-12-25 11:29:16,122] INFO - data_transformation.py : Applying preprocessing object on training and testing dataframes
+[2025-12-25 11:29:17,993] INFO - data_transformation.py : Training array shape: (6509, 6298)
+[2025-12-25 11:29:17,994] INFO - data_transformation.py : Testing array shape: (1628, 6298)
+[2025-12-25 11:29:18,002] INFO - data_transformation.py : Saved preprocessing object at artifacts\preprocessor.pkl
+[2025-12-25 11:29:18,062] INFO - model_trainer.py : split training and test input data
